@@ -25,7 +25,16 @@ Here's a list of talks with a summary and they key points.
 
 [CppCon 2017: Bjarne Stroustrup “Learning and Teaching Modern C++” - YouTube](https://www.youtube.com/watch?v=fX2W3nNjJIo)
 
+### Matt Godbolt “What Has My Compiler Done for Me Lately? Unbolting the Compiler's Lid”
 
+[CppCon 2017: Matt Godbolt “What Has My Compiler Done for Me Lately? Unbolting the Compiler's Lid”](https://www.youtube.com/watch?v=bSkpMdDe4g4)
+
+[PDF slides](https://github.com/CppCon/CppCon2017/blob/master/Keynotes/What%20Has%20My%20Compiler%20Done%20for%20Me%20Lately%20-%20Unbolting%20the%20Compiler's%20Lid/What%20Has%20My%20Compiler%20Done%20for%20Me%20Lately%20-%20Unbolting%20the%20Compiler's%20Lid%20-%20Matt%20Godbolt%20-%20CppCon%202017.pdf)
+
+* Matt's story
+* ASM 101
+* examples of how compilers might be smart
+* tech stack behind Compiler Explorer
 
 ## Other
 
