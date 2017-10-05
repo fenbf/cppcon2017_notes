@@ -31,10 +31,10 @@ Here's a list of talks with a summary and they key points.
 
 [PDF slides](https://github.com/CppCon/CppCon2017/blob/master/Keynotes/What%20Has%20My%20Compiler%20Done%20for%20Me%20Lately%20-%20Unbolting%20the%20Compiler's%20Lid/What%20Has%20My%20Compiler%20Done%20for%20Me%20Lately%20-%20Unbolting%20the%20Compiler's%20Lid%20-%20Matt%20Godbolt%20-%20CppCon%202017.pdf)
 
-* Matt's story
-* ASM 101
-* examples of how compilers might be smart
-* tech stack behind Compiler Explorer
+* Matt's story: why he loves asm and how he started with Compiler Explorer.
+* ASM 101, it's really not that hard to read some of the basic code. It might help you to understand your code better.
+* Examples of how compilers might be smart. Math stuff mostly, but intresting to see how it's usually best to rely on the code generation.
+* Tech stack behind Compiler Explorer
 
 ## Other
 
