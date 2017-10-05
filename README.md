@@ -16,6 +16,7 @@ Links
 * [Charles L. Wilcox's Trip Report](http://web.cynd.net/~willo/cppcon-2017-trip-report/)
 * [Oliver Smith's Cpp Con 2017 Report](https://kfsone.wordpress.com/2017/10/01/cppcon-2017/)
 * [Eva "Bunny" Conti: A Beginner's Guide to CPPCon 2017](https://bunnyladame.blogspot.no/2017/09/a-beginners-guide-to-cppcon-2017.html)
+* [Viktor Kirilov - Cpp Con 2017 Trip report](http://onqtam.com/misc/2017-10-04-cppcon-2017-trip-report/)
 
 ## Talks
 
