@@ -25,6 +25,10 @@ Here's a list of talks with a summary and they key points.
 
 [CppCon 2017: Bjarne Stroustrup “Learning and Teaching Modern C++” - YouTube](https://www.youtube.com/watch?v=fX2W3nNjJIo)
 
+* "We're all teachers" - this is a good talk, especially for all the people who teach other how to code: but not only bloggers, proffesors... but even for you when you advice/help your collegues from time to time.
+* C++ was tought sometimes in a messy way, so we can do better.
+* "if you write your own linked list (and use it in production code) you're cool". We cannot teach that way any more. It's just better to use STL.
+
 ### Matt Godbolt “What Has My Compiler Done for Me Lately? Unbolting the Compiler's Lid”
 
 [CppCon 2017: Matt Godbolt “What Has My Compiler Done for Me Lately? Unbolting the Compiler's Lid”](https://www.youtube.com/watch?v=bSkpMdDe4g4)
