@@ -42,6 +42,18 @@ Here's a list of talks with a summary and they key points.
 * Examples of how compilers might be smart. Math stuff mostly, but intresting to see how it's usually best to rely on the code generation.
 * Tech stack behind Compiler Explorer
 
+### Herb Sutter "Meta - Thoughts on Generative C++"
+
+[PDF slides](https://github.com/CppCon/CppCon2017/blob/master/Keynotes/Meta%20-%20Thoughts%20on%20Generative%20C%2B%2B/Meta%20-%20Thoughts%20on%20Generative%20C%2B%2B%20-%20Herb%20Sutter%20-%20CppCon%202017.pdf)
+
+[YouTube presentation](https://www.youtube.com/watch?v=4AfRAVcThyA&list=PLHTh1InhhwT6bwIpRk0ZbCA0N2p1taxd6&index=3)
+
+At the beginning of the talk, Herb Sutter smartly “smuggled” very interesting concept of “Consistent comparison” in C++ which details you can find in proposal material [P0515 R0](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0515r0.pdf).
+
+Main part was based on C++ static reflection – many links about this topic you can find on
+[Jens Weller site](https://meetingcpp.com/blog/items/reflections-on-the-reflection-proposals.html). Herb shown how C++ can be easily extended using meta-classes that introduce another kind of abstraction. That was announcement of great changes that will come in near future.
+
+
 ## Other
 
 ## Contributors
