@@ -42,7 +42,27 @@ Here's a list of talks with a summary and they key points.
 * Examples of how compilers might be smart. Math stuff mostly, but intresting to see how it's usually best to rely on the code generation.
 * Tech stack behind Compiler Explorer
 
-## Other
+### Carl Cook “When a Microsecond Is an Eternity: High Performance Trading Systems in C++”
+
+[CppCon 2017: Carl Cook “When a Microsecond Is an Eternity: High Performance Trading Systems in C++”](https://www.youtube.com/watch?v=NH1Tta7purM)
+
+[PDF slides](https://github.com/CppCon/CppCon2017/blob/master/Presentations/When%20a%20Microsecond%20Is%20an%20Eternity/When%20a%20Microsecond%20Is%20an%20Eternity%20-%20Carl%20Cook%20-%20CppCon%202017.pdf)
+
+* High Frequency Trading in general earns money by buying and selling very often, and looking for small price changes. The success is to be faster than the competition.
+ * Usually they have like 2.5us to react and do the trade... it's less time than a light travelling from top of BBurj Khalifa to the bottom!
+* C++ is used because it's a relatively abstract language, gives zero cost overhead over the abstraction over the hardware.
+ * They often have to check the generated code, so it's no coincidence that Compiler Explorer comes from that industry... check Matt's talk.
+* Techniques covered (for the hot path, not for the whole code) 
+ * removing branch prediction, using templates and compile time configuration (to avoid dynamic polimorphism, virtual method costs, eliminate branches) 
+ * Lambdas are very expressive and still give a lot of power, they might be inlined.
+ * Be carefull about memory allocations, use pool of pre allocated objects, delete on other thread
+ * Carl advices to use exceptions (but not for the control flow!), they cost zero if they didn't throw.
+ * Multithreading is usually avoided for low latency code, the hot path
+ * Use data wisely, if you read something from the memory, use full cache lines
+ * There's a comparision of various hash map approaches
+ * in order to keep the cache hot, they might run simulations and only from time to time do the actual trade/response.
+* As usually: measure measure measure :)
+ * They setup a production system to measure it reliably
 
 ## Contributors
 
