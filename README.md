@@ -18,6 +18,14 @@ Links
 * [Eva "Bunny" Conti: A Beginner's Guide to CPPCon 2017](https://bunnyladame.blogspot.no/2017/09/a-beginners-guide-to-cppcon-2017.html)
 * [Viktor Kirilov - Cpp Con 2017 Trip report](http://onqtam.com/misc/2017-10-04-cppcon-2017-trip-report/)
 
+* IT Hare on Soft.ware reports: 
+ * [#CPPCON2017 Day 0: IMO best posters](http://ithare.com/cppcon2017-day-0-imo-best-posters/)
+ * [#CPPCON2017. Day 1. Hope to get something-better-than-chevron-hell](http://ithare.com/cppcon2017-day-1-hope-to-get-something-better-than-chevrone-hell/)
+ * [#CPPCON2017. Day 2. Why Local Allocators are a Good Thing(tm) Performance-Wise, and Why I am Very Cautious about C++17 STL parallelized algos](http://ithare.com/cppcon2017-day-2-why-local-allocators-are-a-good-thing-and-why-i-am-very-cautious-about-stl-paralellized-algos/)
+ * [#CPPCON2017. Day 3. The Future of C++](http://ithare.com/cppcon2017-day-3-the-future-of-c/)
+ * [#CPPCON2017. Day 4. Async Rulezzz!](http://ithare.com/cppcon2017-day-4-async-rulezz/)
+ * [CPPCON Day #5. Miscellaneous](http://ithare.com/cppcon-day-5-miscellaneous/)
+
 ## Talks
 
 Here's a list of talks with a summary and they key points.
@@ -54,7 +62,27 @@ Main part was based on C++ static reflection – many links about this topic you
 [Jens Weller site](https://meetingcpp.com/blog/items/reflections-on-the-reflection-proposals.html). Herb shown how C++ can be easily extended using meta-classes that introduce another kind of abstraction. That was announcement of great changes that will come in near future.
 
 
-## Other
+### Carl Cook “When a Microsecond Is an Eternity: High Performance Trading Systems in C++”
+
+[CppCon 2017: Carl Cook “When a Microsecond Is an Eternity: High Performance Trading Systems in C++”](https://www.youtube.com/watch?v=NH1Tta7purM)
+
+[PDF slides](https://github.com/CppCon/CppCon2017/blob/master/Presentations/When%20a%20Microsecond%20Is%20an%20Eternity/When%20a%20Microsecond%20Is%20an%20Eternity%20-%20Carl%20Cook%20-%20CppCon%202017.pdf)
+
+* High Frequency Trading in general earns money by buying and selling very often, and looking for small price changes. The success is to be faster than the competition.
+ * Usually they have like 2.5us to react and do the trade... it's less time than a light travelling from top of BBurj Khalifa to the bottom!
+* C++ is used because it's a relatively abstract language, gives zero cost overhead over the abstraction over the hardware.
+ * They often have to check the generated code, so it's no coincidence that Compiler Explorer comes from that industry... check Matt's talk.
+* Techniques covered (for the hot path, not for the whole code) 
+ * removing branch prediction, using templates and compile time configuration (to avoid dynamic polimorphism, virtual method costs, eliminate branches) 
+ * Lambdas are very expressive and still give a lot of power, they might be inlined.
+ * Be carefull about memory allocations, use pool of pre allocated objects, delete on other thread
+ * Carl advices to use exceptions (but not for the control flow!), they cost zero if they didn't throw.
+ * Multithreading is usually avoided for low latency code, the hot path. They even disable all other cores and use just one.
+ * Use data wisely, if you read something from the memory, use full cache lines
+ * There's a comparision of various hash map approaches
+ * in order to keep the cache hot, they might run simulations and only from time to time do the actual trade/response.
+* As usually: measure measure measure :)
+ * They setup a production system to measure it reliably
 
 ## Contributors
 
