@@ -18,6 +18,14 @@ Links
 * [Eva "Bunny" Conti: A Beginner's Guide to CPPCon 2017](https://bunnyladame.blogspot.no/2017/09/a-beginners-guide-to-cppcon-2017.html)
 * [Viktor Kirilov - Cpp Con 2017 Trip report](http://onqtam.com/misc/2017-10-04-cppcon-2017-trip-report/)
 
+* IT Hare on Soft.ware reports: 
+ * [#CPPCON2017 Day 0: IMO best posters](http://ithare.com/cppcon2017-day-0-imo-best-posters/)
+ * [#CPPCON2017. Day 1. Hope to get something-better-than-chevron-hell](http://ithare.com/cppcon2017-day-1-hope-to-get-something-better-than-chevrone-hell/)
+ * [#CPPCON2017. Day 2. Why Local Allocators are a Good Thing(tm) Performance-Wise, and Why I am Very Cautious about C++17 STL parallelized algos](http://ithare.com/cppcon2017-day-2-why-local-allocators-are-a-good-thing-and-why-i-am-very-cautious-about-stl-paralellized-algos/)
+ * [#CPPCON2017. Day 3. The Future of C++](http://ithare.com/cppcon2017-day-3-the-future-of-c/)
+ * [#CPPCON2017. Day 4. Async Rulezzz!](http://ithare.com/cppcon2017-day-4-async-rulezz/)
+ * [CPPCON Day #5. Miscellaneous](http://ithare.com/cppcon-day-5-miscellaneous/)
+
 ## Talks
 
 Here's a list of talks with a summary and they key points.
@@ -57,7 +65,7 @@ Here's a list of talks with a summary and they key points.
  * Lambdas are very expressive and still give a lot of power, they might be inlined.
  * Be carefull about memory allocations, use pool of pre allocated objects, delete on other thread
  * Carl advices to use exceptions (but not for the control flow!), they cost zero if they didn't throw.
- * Multithreading is usually avoided for low latency code, the hot path
+ * Multithreading is usually avoided for low latency code, the hot path. They even disable all other cores and use just one.
  * Use data wisely, if you read something from the memory, use full cache lines
  * There's a comparision of various hash map approaches
  * in order to keep the cache hot, they might run simulations and only from time to time do the actual trade/response.
