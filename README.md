@@ -17,6 +17,7 @@ Links
 * [Oliver Smith's Cpp Con 2017 Report](https://kfsone.wordpress.com/2017/10/01/cppcon-2017/)
 * [Eva "Bunny" Conti: A Beginner's Guide to CPPCon 2017](https://bunnyladame.blogspot.no/2017/09/a-beginners-guide-to-cppcon-2017.html)
 * [Viktor Kirilov - Cpp Con 2017 Trip report](http://onqtam.com/misc/2017-10-04-cppcon-2017-trip-report/)
+* [Trip report: the JetBrains C++ team at CppCon 2017](https://blog.jetbrains.com/clion/2017/10/jb-cpp-at-cppcon-2017/)
 
 * IT Hare on Soft.ware reports: 
  * [#CPPCON2017 Day 0: IMO best posters](http://ithare.com/cppcon2017-day-0-imo-best-posters/)
@@ -100,3 +101,4 @@ Main part was based on C++ static reflection – many links about this topic you
 ## Contributors
 
 * (author) [Bartek from bfilipek.com](http://www.bfilipek.com)
+* [Łukasz Rachwalski](https://github.com/lukaszrachwalski)
