@@ -83,6 +83,19 @@ Main part was based on C++ static reflection – many links about this topic you
  * in order to keep the cache hot, they might run simulations and only from time to time do the actual trade/response.
 * As usually: measure measure measure :)
  * They setup a production system to measure it reliably
+ 
+### Scott Wardle "EA's Secret Weapon - Packages and Modules"
+
+[PDF slides](https://github.com/CppCon/CppCon2017/blob/master/Presentations/EA's%20Secret%20Weapon%20-%20Packages%20and%20Modules/EA's%20Secret%20Weapon%20-%20Packages%20and%20Modules%20-%20Scott%20Wardle%20-%20CppCon%202017.pdf)
+
+[YouTube presentation](https://www.youtube.com/watch?v=NlyDUQS8OcQ)
+
+* 15 years ago ElectronicArts faced the problem of code sharing and versioning. The company with many departaments around the world and code base running on multiple platforms decided to use code level, package approach. 
+* A package is a C++ library source code conatining package name, package version, public includes (interface) and private includes and sources.
+* Masterconfig file specifies list of all packages and versions ( including coinstraints ) on executable/project/team level.
+* Each EA team build the packages on its own using configuration packages containing building flags.
+* Packages are uploaded to package server, while source code is stored independently on VCS.
+* Both packages and modules deals with public interfaces and hiding privates.
 
 ## Contributors
 
