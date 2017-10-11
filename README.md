@@ -2,6 +2,8 @@
 
 Notes, talk summaries, trip reports from Cpp Con 2017
 
+published at: [Bartek's coding blog: Cpp Con 2017 Notes](http://www.bfilipek.com/2017/10/cpp-con-2017-notes.html)
+
 ## Intro
 
 Links
@@ -101,4 +103,4 @@ Main part was based on C++ static reflection – many links about this topic you
 ## Contributors
 
 * (author) [Bartek from bfilipek.com](http://www.bfilipek.com)
-* [Łukasz Rachwalski](https://github.com/lukaszrachwalski)
+* [Łukasz Rachwalski](https://github.com/lukaszrachwalski) - organizer of [C++ User Group Krakow](https://github.com/CppUserGroupCracow)
