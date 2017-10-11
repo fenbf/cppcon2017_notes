@@ -100,6 +100,21 @@ Main part was based on C++ static reflection – many links about this topic you
 * Packages are uploaded to package server, while source code is stored independently on VCS.
 * Both packages and modules deals with public interfaces and hiding privates.
 
+### Diego Rodriguez-Losada Gonzalez "Faster Delivery of Large C/C++ Projects with Conan Package Manager and Efficient Continuous Integration"
+
+[YouTube presentation](https://www.youtube.com/watch?v=xA9yRX4Mdz0)
+
+- Both inline functions ( declared in headers ) and archive ( static library ) functions used 
+in shared library cause that the code is totally embedded into shared library. Any change the
+code of static library or header function without rebuilding shared library cause code and behavioral divergence.
+
+- [Conan.io](http://docs.conan.io/en/latest/) is a portable package manager that helps in dependencies management.
+It provides package versioning, local binary cache, package server and integration with 
+[JFrog](https://bintray.com/conan/conan-transit) - artifact repository. 
+
+- [Conan.io](http://docs.conan.io/en/latest/) can be easily integrated with [Jenkins](https://jenkins.io) 
+pipeline. Packages can be built, tested and uploaded to artifact repository using [Jenkinsfile ](https://jenkins.io/doc/book/pipeline/jenkinsfile/).
+
 ## Contributors
 
 * (author) [Bartek from bfilipek.com](http://www.bfilipek.com)
