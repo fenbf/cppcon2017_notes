@@ -20,6 +20,11 @@ Links
 * [Eva "Bunny" Conti: A Beginner's Guide to CPPCon 2017](https://bunnyladame.blogspot.no/2017/09/a-beginners-guide-to-cppcon-2017.html)
 * [Viktor Kirilov - Cpp Con 2017 Trip report](http://onqtam.com/misc/2017-10-04-cppcon-2017-trip-report/)
 * [Trip report: the JetBrains C++ team at CppCon 2017](https://blog.jetbrains.com/clion/2017/10/jb-cpp-at-cppcon-2017/)
+* [Tim van Deurzen CppCon 2017 For Fun and Profit](http://blog.razzeal.org/posts/trip-report-cppcon-2017)
+* [Quentin Duval - My CppCon 2017 Trip Report – 10 great talks to watch and learn from](https://deque.blog/2017/10/04/my-cppcon-2017-trip-report-10-great-talks-to-watch-and-learn-from)
+* [Patrice Roy - À propos de cppcon 2017](http://h-deb.clg.qc.ca/Sujets/Orthogonal/cppcon2017.html ) _in french_
+* [Isabella Muerte's CppCon 2017 Trip Report](https://izzys.casa/posts/cppcon-2017-trip-report.html)
+* [Jens Weller - A CppCon 2017 trip report](https://www.meetingcpp.com/blog/items/A-CppCon-2017-trip-report.html)
 
 * IT Hare on Soft.ware reports: 
  * [#CPPCON2017 Day 0: IMO best posters](http://ithare.com/cppcon2017-day-0-imo-best-posters/)
