@@ -26,6 +26,7 @@ Links
 * [Isabella Muerte's CppCon 2017 Trip Report](https://izzys.casa/posts/cppcon-2017-trip-report.html)
 * [Jens Weller - A CppCon 2017 trip report](https://www.meetingcpp.com/blog/items/A-CppCon-2017-trip-report.html)
 
+
 * IT Hare on Soft.ware reports: 
  * [#CPPCON2017 Day 0: IMO best posters](http://ithare.com/cppcon2017-day-0-imo-best-posters/)
  * [#CPPCON2017. Day 1. Hope to get something-better-than-chevron-hell](http://ithare.com/cppcon2017-day-1-hope-to-get-something-better-than-chevrone-hell/)
@@ -124,3 +125,4 @@ pipeline. Packages can be built, tested and uploaded to artifact repository usin
 
 * (author) [Bartek from bfilipek.com](http://www.bfilipek.com)
 * [Łukasz Rachwalski](https://github.com/lukaszrachwalski) - organizer of [C++ User Group Krakow](https://github.com/CppUserGroupCracow)
+* [Yann Labou](https://github.com/yannlabou)
