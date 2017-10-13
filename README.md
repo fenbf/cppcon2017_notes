@@ -122,6 +122,20 @@ It provides package versioning, local binary cache, package server and integrati
 - [Conan.io](http://docs.conan.io/en/latest/) can be easily integrated with [Jenkins](https://jenkins.io) 
 pipeline. Packages can be built, tested and uploaded to artifact repository using [Jenkinsfile ](https://jenkins.io/doc/book/pipeline/jenkinsfile/).
 
+### Robert Ramey - "How to Write Effective Documentation for C++ Libraries with Minimal Effort"
+
+[YouTube presentation](https://www.youtube.com/watch?v=YxmdCxX9dMk)
+
+- Code implementation and documentation should be updated at the same time.
+
+- Documentation helps users to use the code. It should state the purpose of the code and address only public API.
+Anything else can be excluded. Implementation notes should be in code.
+
+- Exemplary documentation can have the following sections: Introduction, Motivation examples with explanation, Notes, Rationale, Reference ( Concepts, Types, Functions, Metafunctions ).
+
+- Tools: [Doxygen](http://www.stack.nl/~dimitri/doxygen/), [DocBook](http://docbook.org),
+[BoostBook](http://www.boost.org/doc/libs/1_64_0/doc/html/boostbook.html), [xmlmind](http://www.xmlmind.com/xmleditor/).
+
 ## Contributors
 
 * (author) [Bartek from bfilipek.com](http://www.bfilipek.com)
