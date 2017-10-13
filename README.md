@@ -25,6 +25,7 @@ Links
 * [Patrice Roy - À propos de cppcon 2017](http://h-deb.clg.qc.ca/Sujets/Orthogonal/cppcon2017.html ) _in french_
 * [Isabella Muerte's CppCon 2017 Trip Report](https://izzys.casa/posts/cppcon-2017-trip-report.html)
 * [Jens Weller - A CppCon 2017 trip report](https://www.meetingcpp.com/blog/items/A-CppCon-2017-trip-report.html)
+* [Mathieu Ropert - CppCon 2017 trip report](https://mropert.github.io/2017/10/12/cppcon2017)
 
 * IT Hare on Soft.ware reports: 
  * [#CPPCON2017 Day 0: IMO best posters](http://ithare.com/cppcon2017-day-0-imo-best-posters/)
