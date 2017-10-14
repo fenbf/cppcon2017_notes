@@ -163,7 +163,16 @@ pipeline. Packages can be built, tested and uploaded to artifact repository usin
     * XMLmind (Robert’s recommendation)
         * WYSIWG for boostbook
         * enforce Boostbook syntax
+        
+- Code implementation and documentation should be updated at the same time.
 
+- Documentation helps users to use the code. It should state the purpose of the code and address only public API.
+Anything else can be excluded. Implementation notes should be in code.
+
+- Exemplary documentation can have the following sections: Introduction, Motivation examples with explanation, Notes, Rationale, Reference ( Concepts, Types, Functions, Metafunctions ).
+
+- Tools: [Doxygen](http://www.stack.nl/~dimitri/doxygen/), [DocBook](http://docbook.org),
+[BoostBook](http://www.boost.org/doc/libs/1_64_0/doc/html/boostbook.html), [xmlmind](http://www.xmlmind.com/xmleditor/).
 
 ## Contributors
 
