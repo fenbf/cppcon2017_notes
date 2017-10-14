@@ -179,3 +179,4 @@ Anything else can be excluded. Implementation notes should be in code.
 * (author) [Bartek from bfilipek.com](http://www.bfilipek.com)
 * [Łukasz Rachwalski](https://github.com/lukaszrachwalski) - organizer of [C++ User Group Krakow](https://github.com/CppUserGroupCracow)
 * [Yann Labou](https://github.com/yannlabou)
+* [Erick Guan](https://github.com/fantasticfears)
