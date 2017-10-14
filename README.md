@@ -153,26 +153,67 @@ pipeline. Packages can be built, tested and uploaded to artifact repository usin
         * Metafunctions
 * Tools
     * Doxygen
-        * + Doc in comments
-        * - ugly and hard to configure
-        * - hard to write concepts and examples
+        * Doc in comments
+        * ugly and hard to configure
+        * hard to write concepts and examples
     * Docbook/BoostBook
-        * + decouples content from format
-        * - gen/edit XML is hard
+        * decouples content from format
+        * gen/edit XML is hard
         * QuickBook is the rescue for Boost authors
     * XMLmind (Robert’s recommendation)
         * WYSIWG for boostbook
         * enforce Boostbook syntax
         
-- Code implementation and documentation should be updated at the same time.
+* Code implementation and documentation should be updated at the same time.
 
-- Documentation helps users to use the code. It should state the purpose of the code and address only public API.
+* Documentation helps users to use the code. It should state the purpose of the code and address only public API.
 Anything else can be excluded. Implementation notes should be in code.
 
-- Exemplary documentation can have the following sections: Introduction, Motivation examples with explanation, Notes, Rationale, Reference ( Concepts, Types, Functions, Metafunctions ).
+* Exemplary documentation can have the following sections: Introduction, Motivation examples with explanation, Notes, Rationale, Reference ( Concepts, Types, Functions, Metafunctions ).
 
-- Tools: [Doxygen](http://www.stack.nl/~dimitri/doxygen/), [DocBook](http://docbook.org),
-[BoostBook](http://www.boost.org/doc/libs/1_64_0/doc/html/boostbook.html), [xmlmind](http://www.xmlmind.com/xmleditor/).
+* Documenting tools:
+   * [Doxygen](http://www.stack.nl/~dimitri/doxygen/)
+   * [DocBook](http://docbook.org)
+   * [BoostBook](http://www.boost.org/doc/libs/1_64_0/doc/html/boostbook.html)
+   * [xmlmind](http://www.xmlmind.com/xmleditor/).
+
+### Peter Sommerlad - “Mocking Frameworks considered harmful”
+
+[PDF Slides](https://github.com/CppCon/CppCon2017/blob/master/Presentations/Mocking%20Frameworks%20Considered%20Harmful/Mocking%20Frameworks%20Considered%20Harmful%20-%20Peter%20Sommerlad%20-%20CppCon%202017.pdf)
+
+[YouTube presentation](https://www.youtube.com/watch?v=uhuHZXTRfH4)
+
+* Mocks/stubs are needed when:
+   * real object has nondeterministic behavior,
+   * real object is difficult to set up,
+   * it is hard to trigger behavior on real object,
+   * real object runs slow,
+   * real object is not implemented yet,
+   * want to check the correctness usage of real object.
+
+* Seams is a place where you can alter behavior in your program without editing in that place. There are 4 types of seams:
+   * object seam,
+   * compile seam,
+   * preprocessor seam,
+   * link seam.
+
+* Problems with C++ mocking frameworks:
+   * some implementations are modeled on Java designs,
+   *  no useful reflection implies usage a lot of macros for generating names, defining function stubs, etc.,
+   *  some implementations relies on ABI, replacing vtable entries - not portable and not compatibile between compiler versions - more about replacing vtables you can find [here](https://defuse.ca/exploiting-cpp-vtables.htm)
+   * Domain Specific Language (DSL) used to define (expected) behavior is not understandable for refactoring tools,
+ 
+* Overusing mocks can cause tight coupling between test case and System Under Test (SUT), and SUT with Dependent Other Components (DOC).
+
+* General thoughts about mocking:
+   * mocks are good for testing legacy code, non-changeable stateful API,
+   * be aware of mocking for new, premature code or unwritten code,
+   * test cases should be as simple as possible.
+
+* Mocking frameworks/tools:
+   * [gtest/gmock](https://github.com/google/googletest/tree/master/googlemock),
+   * [trompeloeil](https://github.com/rollbear/trompeloeil),
+   * [mockator](http://www.mockator.com).
 
 ## Contributors
 
