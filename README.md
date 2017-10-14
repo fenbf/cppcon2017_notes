@@ -122,10 +122,48 @@ It provides package versioning, local binary cache, package server and integrati
 - [Conan.io](http://docs.conan.io/en/latest/) can be easily integrated with [Jenkins](https://jenkins.io) 
 pipeline. Packages can be built, tested and uploaded to artifact repository using [Jenkinsfile ](https://jenkins.io/doc/book/pipeline/jenkinsfile/).
 
-### Robert Ramey - "How to Write Effective Documentation for C++ Libraries with Minimal Effort"
+### Roel Standaert "Migrating a C++03 library to C++11 case study: Wt 4"
+
+[YouTube presentation](https://www.youtube.com/watch?v=G0OcaAAdl1o)
+
+* Move semantic is good but loud.
+* `clang-tidy` can detect use after move.
+* Why we stuck at C++11 again? It's 2017.
+
+### Robert Ramey "How to Write Effective Documentation for C++ Libraries with Minimal Effort"
 
 [YouTube presentation](https://www.youtube.com/watch?v=YxmdCxX9dMk)
 
+* Be descriptive in the first paragraph for library doc.
+* Writing doc is hard. The tool only helps a little.
+* Writing doc with code.
+    * Explicit state the intended purpose.
+    * Code should reflect that intention.
+    * Should address only public API, exclude anything else.
+    * Implementation notes in the code.
+* Writing framework
+    * Introduction - purpose of the library
+    * Motivating examples with explanation
+    * Notes
+    * Rationale
+    * Reference
+        * Concepts (type requirements): why this type parameters we have to use
+        * Types
+        * Functions
+        * Metafunctions
+* Tools
+    * Doxygen
+        * + Doc in comments
+        * - ugly and hard to configure
+        * - hard to write concepts and examples
+    * Docbook/BoostBook
+        * + decouples content from format
+        * - gen/edit XML is hard
+        * QuickBook is the rescue for Boost authors
+    * XMLmind (Robert’s recommendation)
+        * WYSIWG for boostbook
+        * enforce Boostbook syntax
+        
 - Code implementation and documentation should be updated at the same time.
 
 - Documentation helps users to use the code. It should state the purpose of the code and address only public API.
